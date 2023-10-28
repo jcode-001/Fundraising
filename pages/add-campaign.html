@@ -11,6 +11,145 @@
       <h1>Let's begin your fundraising journey</h1>
       <p>We're here to guide you every step of the way.</p>
     </aside>
-    <section class="right-side"></section>
+    <section class="right-side">
+      <!-- <header>
+        <button id="signin" class="signin-btn">Sign In</button>
+      </header> -->
+      <!-- <h2 class="h2">Let's get started</h2> -->
+
+      <div class="form-content-container">
+        <h3>Fundraiser Information</h3>
+        <form action="">
+          <div class="input-container">
+            <label for="fundraiser title" class="label">Fundraiser title</label>
+            <input
+              type="text"
+              name="fundraiser title"
+              id=""
+              placeholder="Add the title of your page"
+              class="input"
+            />
+          </div>
+          <div class="input-container">
+            <label for="fundraiser category or partner" class="label"
+              >Fundraiser category</label
+            >
+            <select name="fundraiser category" id="">
+              <option value="Animals & pet">Animals & pet</option>
+              <option value="business & startups">Business & startups</option>
+            </select>
+          </div>
+          <div class="form-container-2">
+            <h3>Fundraiser Location</h3>
+            <div class="input-container">
+              <label for="fundraiser category or partner" class="label"
+                >Country</label
+              >
+              <select name="fundraiser category" id="">
+                <option value="Nigeria">Nigeria</option>
+                <option value="">United Kingdom</option>
+              </select>
+              <p class="small-text">
+                Please select the country that we’ll be sending funds to
+                (typically where you’re resident). This helps match you to the
+                correct payment processors.
+              </p>
+            </div>
+            <div class="input-container">
+              <label for="fundraiser city" class="label">City</label>
+              <input type="text" name="fundraiser city" class="input" />
+            </div>
+          </div>
+          <div class="form-container-2">
+            <h3>Donation Information</h3>
+            <div class="input-container">
+              <label for="fundraiser category or partner" class="label"
+                >What currency do you want to raise money in?</label
+              >
+              <select name="donatioon currency" id="">
+                <option value="Nigeria">US Dollar</option>
+                <option value="">Euro</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-container-2">
+            <h3>Fund & registration details</h3>
+            <p class="small-text">
+              *Name of the person receiving funds. For organizations, the legal
+              representative name (this can be amended later).
+            </p>
+            <div class="grid-form-container">
+              <div class="grid-form-input">
+                <label for="first name">Your first name(s)*</label>
+                <input
+                  type="text"
+                  name="first name"
+                  placeholder="Enter first name"
+                  required
+                  class="input"
+                />
+                <p class="hint">First name(s) as on your ID document</p>
+              </div>
+              <div class="grid-form-input">
+                <label for="last name">Your last name</label>
+                <input
+                  type="text"
+                  name="last name"
+                  placeholder="Enter last name"
+                  required
+                  class="input"
+                />
+              </div>
+              <div class="grid-form-input">
+                <label for="last name">Your email</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter email"
+                  required
+                  class="input"
+                />
+              </div>
+              <div class="grid-form-input">
+                <label for="last name">Account password</label>
+                <input
+                  type="password"
+                  name="account password"
+                  placeholder="Enter password"
+                  required
+                  style="margin-bottom: 1.6rem"
+                  class="input"
+                />
+              </div>
+            </div>
+            <label for="Profile picture" class="h3-upload"
+              >Upload your profile picture</label
+            >
+            <p class="hint">This picture will be shown next to your name</p>
+            <div class="upload-content">
+              <label for="" class="upload">
+                <input
+                  type="file"
+                  id="profile_image"
+                  name="profile_image"
+                  hidden=""
+                  accept="image/jpeg,image/png"
+                  class="input"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="agree-block">
+            <input type="checkbox" name="agree" id="" />
+            <p class="hint">
+              * I agree to the Funnel <a href="#">terms</a>,
+              <a href="#">privacy policy</a>, and industry low
+              <a href="#">fees</a>
+            </p>
+          </div>
+          <button class="continue-btn">Continue</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
