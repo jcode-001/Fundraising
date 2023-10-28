@@ -429,6 +429,10 @@ strong {
   width: 100%;
 }
 
+.other-div img {
+  height: 250px;
+}
+
 .other-featured .other-content {
   padding: 20px;
   /* padding-top: 1rem; */
@@ -1109,11 +1113,15 @@ footer .logo {
 /* For image slider */
 .slider-container {
   max-width: 1200px;
+  border: 1px solid #000;
   width: 95%;
+  margin: 0 auto;
 }
+
 .slider-wrapper {
   position: relative;
 }
+
 .slider-wrapper .slide-button {
   position: absolute;
   top: 50%;
@@ -1204,7 +1212,7 @@ footer .logo {
 /* Styles for mobile and tablets */
 @media only screen and (max-width: 1023px) {
   .slider-wrapper .slide-button {
-    display: none !important;
+    display: none;
   }
   .slider-wrapper .image-list {
     gap: 10px;
