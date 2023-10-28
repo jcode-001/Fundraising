@@ -1,544 +1,674 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funel - Agancy landing page</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Funel - Agancy landing page</title>
-
-  <!-- 
+    <!-- 
     - favicon link
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-  <!-- 
+    <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- 
+    <!-- 
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts Link For Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
 
-<body id="top">
-
-  <!-- 
+  <body id="top">
+    <!-- 
     - #HEADER
   -->
 
-  <header>
+    <header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" alt="Funel logo" />
+        </a>
 
-    <div class="container">
+        <div class="navbar-wrapper">
+          <button class="navbar-menu-btn" data-navbar-toggle-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
 
-      <a href="#" class="logo">
-        <img src="./assets/images/logo.png" alt="Funel logo">
-      </a>
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
 
-      <div class="navbar-wrapper">
+              <li class="nav-item">
+                <a href="#about" class="nav-link">What we do</a>
+              </li>
 
-        <button class="navbar-menu-btn" data-navbar-toggle-btn>
-          <ion-icon name="menu-outline"></ion-icon>
-        </button>
+              <li class="nav-item">
+                <a href="#features" class="nav-link">Why us?</a>
+              </li>
 
-        <nav class="navbar" data-navbar>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Our work</a>
+              </li>
 
-          <ul class="navbar-list">
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
 
-            <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#about" class="nav-link">What we do</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#features" class="nav-link">Why us?</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#" class="nav-link">Our work</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-
-          </ul>
-
-          <button class="btn btn-primary">Get in touch</button>
-
-        </nav>
-
+            <button class="btn btn-primary">Start a campaign</button>
+          </nav>
+        </div>
       </div>
+    </header>
 
-    </div>
-
-  </header>
-
-
-
-
-
-  <main>
-
-    <article>
-
-      <!-- 
+    <main>
+      <article>
+        <!-- 
         - #HERO
       -->
 
-      <section class="hero" id="home">
-        <div class="container">
+        <section class="hero" id="home">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">Together we help each other</h1>
 
-          <div class="hero-content">
+              <p class="hero-text">
+                Capture and retrieve your lists across devices to help you stay
+                organized at work, home, and on the go.
+              </p>
 
-            <h1 class="h1 hero-title">Your full-funnel growth agency</h1>
+              <button class="btn btn-primary">
+                <a href="pages/add-campaign.html">Start your campaign</a>
+              </button>
+            </div>
 
-            <p class="hero-text">
-              Capture and retrieve your lists across devices to help you stay organized at work, home, and on the go.
-            </p>
-
-            <button class="btn btn-primary">Get started</button>
-
+            <div class="hero-banner"></div>
           </div>
 
-          <div class="hero-banner"></div>
+          <img src="./assets/images/bg.png" alt="shape" class="shape-content" />
+        </section>
 
-        </div>
-
-        <img src="./assets/images/bg.png" alt="shape" class="shape-content">
-      </section>
-
-
-
-
-
-      <!-- 
+        <!-- 
         - #ABOUT
       -->
 
-      <section class="about" id="about">
-        <div class="container">
-
-          <div class="about-top">
-
-            <h2 class="h2 section-title">What we do</h2>
-
-            <p class="section-text">
-              Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back into the
-              development of
-              the asset through its charitable foundation.
-            </p>
-
-            <ul class="about-list">
-
-              <li>
-                <div class="about-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="briefcase-outline"></ion-icon>
-                  </div>
-
-                  <h3 class="h3 card-title">Paid Search and Social Management</h3>
-
-                  <p class="card-text">
-                    Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back
-                  </p>
-
+        <section class="about" id="about">
+          <div class="content-container">
+            <strong>What can you expect</strong>
+            <h2 class="h2-text">
+              Raising funds on our charity only take some few minutes
+            </h2>
+            <div class="step-guide">
+              <div class="step step-1">
+                <div class="top">
+                  <div class="round-num-icon">1</div>
+                  <!-- <div>
+                  <img
+                    src="assets/images/svg-1.svg"
+                    alt="dashed pathway illustration"
+                  />
+                </div> -->
                 </div>
-              </li>
-
-              <li>
-                <div class="about-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="chatbubbles-outline"></ion-icon>
-                  </div>
-
-                  <h3 class="h3 card-title">Direct Response Content</h3>
-
-                  <p class="card-text">
-                    Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back
+                <div class="bottom">
+                  <h2 class="h2-guide-text">Start with the most basic</h2>
+                  <p class="fade-text">
+                    Start by giving your name and location
                   </p>
-
                 </div>
-              </li>
-
-              <li>
-                <div class="about-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="rocket-outline"></ion-icon>
-                  </div>
-
-                  <h3 class="h3 card-title">CRO and Retention Optimizations</h3>
-
-                  <p class="card-text">
-                    Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back
+              </div>
+              <div class="step step-2">
+                <div class="top">
+                  <div class="round-num-icon">2</div>
+                  <!-- <div>
+                  <img
+                    src="assets/images/svg-1.svg"
+                    alt="dashed pathway illustration"
+                  />
+                </div> -->
+                </div>
+                <div class="bottom">
+                  <h2 class="h2-guide-text">Tell your story</h2>
+                  <p class="fade-text">
+                    We will guide you with advice every step of the way.
                   </p>
-
                 </div>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <div class="about-bottom">
-
-            <figure class="about-bottom-banner">
-              <img src="./assets/images/about-banner.png" alt="about banner" class="about-banner">
-            </figure>
-
-            <div class="about-bottom-content">
-
-              <h2 class="h2 section-title">We’re obsessed with growth</h2>
-
-              <p class="section-text">
-                Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back into the
-                development of
-                the asset through its charitable foundation.
-              </p>
-
-              <button class="btn btn-secondary">Sign Up For Free</button>
-
+              </div>
+              <div class="step step-3">
+                <div class="top">
+                  <div class="round-num-icon">3</div>
+                  <!-- <div>
+                  <img
+                    src="assets/images/svg-1.svg"
+                    alt="dashed pathway illustration"
+                  />
+                </div> -->
+                </div>
+                <div class="bottom">
+                  <h2 class="h2-guide-text">Share with family and friends</h2>
+                  <p class="fade-text">
+                    There are people who want to help you.
+                  </p>
+                </div>
+              </div>
             </div>
-
           </div>
+        </section>
 
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
+        <!-- 
         - #FEATURES
       -->
 
-      <section class="features" id="features">
-        <div class="container">
-
-          <h2 class="h2 section-title">Our team is made up of all different backgrounds from all over the world.</h2>
-
-          <p class="section-text">
-            Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back into the
-            development of
-            the asset through its charitable foundation.
-          </p>
-
-          <ul class="features-list">
-
-            <li class="features-item">
-
-              <figure class="features-item-banner">
-                <img src="./assets/images/feature-1.png" alt="feature banner">
-              </figure>
-
-              <div class="feature-item-content">
-                <h3 class="h2 item-title">Cover your everyday expenses</h3>
-
-                <p class="item-text">
-                  Inspiration comes in many ways and you like to save everything from. sed do eiusmod tempor incididunt
-                  ut labore et
-                  dolore magna aliqua.
-                </p>
+        <section class="features" id="features">
+          <div class="content-container">
+            <strong>Where you can help</strong>
+            <h2 class="h2-text">Featured text</h2>
+          </div>
+          <div class="featured-content">
+            <div class="top">
+              <img
+                src="assets/images/war__gaza-war.jpg"
+                alt="gaza war"
+                class="featured-content-image"
+              />
+            </div>
+            <div class="bottom">
+              <h2 class="content-heading">Gaza War: How to Help</h2>
+              <p class="fade-text">
+                You can help those affected by the recent war in Gaza, by
+                donating to verified fund raisers.
+              </p>
+              <button class="donate-btn-1">Donate now ></button>
+            </div>
+          </div>
+          <!-- others -->
+          <div class="other-featured">
+            <div class="other-div other-1">
+              <img
+                src="	https://www.gofundme.com/c/wp-content/uploads/2023/08/gofundme-maui-fires-homepagebanner.jpg"
+                alt="gaza war"
+                class="featured-content-image"
+              />
+              <div class="other-content">
+                <p><strong>Maui wiildfire: how to help</strong></p>
+                <button class="donate-btn-1">Donate now ></button>
               </div>
-
-            </li>
-
-            <li class="features-item">
-
-              <figure class="features-item-banner">
-                <img src="./assets/images/feature-2.png" alt="feature banner">
-              </figure>
-
-              <div class="feature-item-content">
-                <h3 class="h2 item-title">We offer low fees that are transparent</h3>
-
-                <p class="item-text">
-                  Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back into the
-                  development of
-                  the asset through its charitable foundation.
-                </p>
+            </div>
+            <div class="other-div other-1">
+              <img
+                src="https://d25oniaj7o2jcw.cloudfront.net/running-preschool-kids-outside.png"
+                alt="gaza war"
+                class="featured-content-image"
+              />
+              <div class="other-content">
+                <p><strong>Fund the future of education</strong></p>
+                <button class="donate-btn-1">Donate now ></button>
               </div>
+            </div>
+            <div class="other-div other-1">
+              <img
+                src="assets/images/war__gaza-war.jpg"
+                alt="gaza war"
+                class="featured-content-image"
+              />
+              <div class="other-content">
+                <p><strong>Fund medical / food supplies in Gaza</strong></p>
+                <button class="donate-btn-1">Donate now ></button>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
+        <section class="success-stories">
+          <h2 class="h2-text">Success stories</h2>
+          <div class="slider-container">
+            <div class="slider-wrapper">
+              <button
+                id="prev-slide"
+                class="slide-button material-symbols-rounded"
+              >
+                chevron_left
+              </button>
+              <ul class="image-list">
+                <div>
+                  <div class="success-story-text">
+                    <h3>Bruno Fernandes’ Match Worn Signed Boots and Shirt</h3>
+                    <p>
+                      Manchester United Star Bruno Fernandes donated his
+                      football boots and shirt to help raise funds for siblings
+                      Leonor and Jaime who were both diagnosed with a rare form
+                      of cancer. The funds will help pay for a new innovative
+                      treatment.
+                    </p>
+                    <p>
+                      <strong>2,240 donors have raised €22,814 so far </strong>
+                    </p>
+                  </div>
+                  <div class="success-story-image">
+                    <img
+                      class="image-item"
+                      src="https://assets.gogetfunding.com/wp-content/uploads/2021/09/mimg_7086748_1615144019-630x840.jpg"
+                      alt="img-1"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <h3>Bruno Fernandes’ Match Worn Signed Boots and Shirt</h3>
+                    <p>
+                      Manchester United Star Bruno Fernandes donated his
+                      football boots and shirt to help raise funds for siblings
+                      Leonor and Jaime who were both diagnosed with a rare form
+                      of cancer. The funds will help pay for a new innovative
+                      treatment.
+                    </p>
+                    <p>
+                      <strong>2,240 donors have raised €22,814 so far </strong>
+                    </p>
+                  </div>
+                  <div>
+                    <img
+                      class="image-item"
+                      src="images/img-1.jpg"
+                      alt="img-1"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <h3>Bruno Fernandes’ Match Worn Signed Boots and Shirt</h3>
+                    <p>
+                      Manchester United Star Bruno Fernandes donated his
+                      football boots and shirt to help raise funds for siblings
+                      Leonor and Jaime who were both diagnosed with a rare form
+                      of cancer. The funds will help pay for a new innovative
+                      treatment.
+                    </p>
+                    <p>
+                      <strong>2,240 donors have raised €22,814 so far </strong>
+                    </p>
+                  </div>
+                  <div>
+                    <img
+                      class="image-item"
+                      src="images/img-1.jpg"
+                      alt="img-1"
+                    />
+                  </div>
+                </div>
+              </ul>
+              <button
+                id="next-slide"
+                class="slide-button material-symbols-rounded"
+              >
+                chevron_right
+              </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 
         - #CTA
       -->
 
-      <section class="cta">
-        <div class="container">
+        <section class="cta">
+          <div class="container">
+            <div class="cta-card">
+              <h3 class="cta-title">Try for 7 days free</h3>
 
-          <div class="cta-card">
+              <p class="cta-text">
+                Each time a digital asset is purchased or sold, Sequoir donates
+                a percentage of the fees back.
+              </p>
 
-            <h3 class="cta-title">Try for 7 days free</h3>
+              <form action="" class="cta-form">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email address"
+                />
 
-            <p class="cta-text">
-              Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back.
-            </p>
-
-            <form action="" class="cta-form">
-
-              <input type="email" name="email" placeholder="Your email address">
-
-              <button type="submit" class="btn btn-secondary">Try It Now</button>
-
-            </form>
-
+                <button type="submit" class="btn btn-secondary">
+                  Try It Now
+                </button>
+              </form>
+            </div>
           </div>
+        </section>
 
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
+        <!-- 
         - #CONTACT
       -->
 
-      <section class="contact" id="contact">
-        <div class="container">
+        <section class="contact" id="contact">
+          <div class="container">
+            <div class="contact-content">
+              <h2 class="h2 contact-title">Let’s scale your brand, together</h2>
 
-          <div class="contact-content">
-            <h2 class="h2 contact-title">Let’s scale your brand, together</h2>
+              <figure class="contact-banner">
+                <img src="./assets/images/contact.png" alt="contact banner" />
+              </figure>
+            </div>
 
-            <figure class="contact-banner">
-              <img src="./assets/images/contact.png" alt="contact banner">
-            </figure>
+            <form action="" class="contact-form">
+              <div class="input-wrapper">
+                <label for="name" class="input-label">Name *</label>
+
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  placeholder="Type Name"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="phone" class="input-label">Phone</label>
+
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Type Phone Number"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="email" class="input-label">Email Address *</label>
+
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="Type Email Address"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="message" class="input-label"
+                  >How can we help? *</label
+                >
+
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Type Description"
+                  required
+                  class="input-field"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
           </div>
+        </section>
+      </article>
+    </main>
 
-          <form action="" class="contact-form">
-
-            <div class="input-wrapper">
-              <label for="name" class="input-label">Name *</label>
-
-              <input type="text" name="name" id="name" required placeholder="Type Name" class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="phone" class="input-label">Phone</label>
-
-              <input type="tel" name="phone" id="phone" placeholder="Type Phone Number" class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="email" class="input-label">Email Address *</label>
-
-              <input type="email" name="email" id="email" required placeholder="Type Email Address" class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="message" class="input-label">How can we help? *</label>
-
-              <textarea name="message" id="message" placeholder="Type Description" required
-                class="input-field"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Send Message</button>
-
-          </form>
-
-        </div>
-      </section>
-
-    </article>
-
-  </main>
-
-
-
-
-
-  <!-- 
+    <!-- 
     - #FOOTER
   -->
 
-  <footer>
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.png" alt="Funel logo" />
+            </a>
 
-    <div class="footer-top">
-      <div class="container">
+            <p class="footer-text">Follow us on</p>
 
-        <div class="footer-brand">
+            <ul class="social-list">
+              <li>
+                <a href="https://github.com/codewithsadee" class="social-link">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+              </li>
 
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.png" alt="Funel logo">
-          </a>
+              <li>
+                <a
+                  href="https://instagram.com/codewithsadee"
+                  class="social-link"
+                >
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
 
-          <p class="footer-text">Follow us on</p>
+              <li>
+                <a
+                  href="https://youtube.com/c/codewithsadee"
+                  class="social-link"
+                >
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
 
-          <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-            <li>
-              <a href="https://github.com/codewithsadee" class="social-link">
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-            </li>
+          <div class="footer-link-box">
+            <ul class="footer-link-list">
+              <li>
+                <h3 class="h4 link-title">Company</h3>
+              </li>
 
-            <li>
-              <a href="https://instagram.com/codewithsadee" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
+              <li>
+                <a href="#" class="footer-link">About Us</a>
+              </li>
 
-            <li>
-              <a href="https://youtube.com/c/codewithsadee" class="social-link">
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
-            </li>
+              <li>
+                <a href="#" class="footer-link">Features</a>
+              </li>
 
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
+              <li>
+                <a href="#" class="footer-link">Pricing</a>
+              </li>
+            </ul>
 
-          </ul>
+            <ul class="footer-link-list">
+              <li>
+                <h3 class="h4 link-title">Products</h3>
+              </li>
 
+              <li>
+                <a href="#" class="footer-link">Blog</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Help Center</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Contact</a>
+              </li>
+            </ul>
+
+            <ul class="footer-link-list">
+              <li>
+                <h3 class="h4 link-title">Resources</h3>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">FAQ’S</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Testimonial</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Terms & Conditions</a>
+              </li>
+            </ul>
+
+            <ul class="footer-link-list">
+              <li>
+                <h3 class="h4 link-title">Relevent</h3>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Why</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Products</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Customers</a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <div class="footer-link-box">
-
-          <ul class="footer-link-list">
-
-            <li>
-              <h3 class="h4 link-title">Company</h3>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">About Us</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Features</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Pricing</a>
-            </li>
-
-          </ul>
-
-          <ul class="footer-link-list">
-
-            <li>
-              <h3 class="h4 link-title">Products</h3>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Blog</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Help Center</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Contact</a>
-            </li>
-
-          </ul>
-
-          <ul class="footer-link-list">
-
-            <li>
-              <h3 class="h4 link-title">Resources</h3>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">FAQ’S</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Testimonial</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Terms & Conditions</a>
-            </li>
-
-          </ul>
-
-          <ul class="footer-link-list">
-
-            <li>
-              <h3 class="h4 link-title">Relevent</h3>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Why</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Products</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Customers</a>
-            </li>
-
-          </ul>
-
-        </div>
-
       </div>
-    </div>
 
-    <div class="footer-bottom">
-      <p class="copyright">
-        &copy; 2022 <a href="#">@codewithsadee</a> All right reserved
-      </p>
-    </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2022 <a href="#">@codewithsadee</a> All right reserved
+        </p>
+      </div>
+    </footer>
 
-  </footer>
-
-
-
-
-
-  <!-- 
+    <!-- 
     - #GO TO TOP
   -->
 
-  <a href="#top" class="go-top active" data-go-top>
-    <ion-icon name="chevron-up-outline"></ion-icon>
-  </a>
+    <a href="#top" class="go-top active" data-go-top>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
 
-
-
-
-
-  <!-- 
+    <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!-- 
+    <!-- 
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
+
+<!-- <div class="container">
+            <div class="about-top">
+              <h2 class="h2 section-title">What we do</h2>
+
+              <p class="section-text">
+                Each time a digital asset is purchased or sold, Sequoir donates
+                a percentage of the fees back into the development of the asset
+                through its charitable foundation.
+              </p>
+
+              <ul class="about-list">
+                <li>
+                  <div class="about-card">
+                    <div class="card-icon">
+                      <ion-icon name="briefcase-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      Paid Search and Social Management
+                    </h3>
+
+                    <p class="card-text">
+                      Each time a digital asset is purchased or sold, Sequoir
+                      donates a percentage of the fees back
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="about-card">
+                    <div class="card-icon">
+                      <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">Direct Response Content</h3>
+
+                    <p class="card-text">
+                      Each time a digital asset is purchased or sold, Sequoir
+                      donates a percentage of the fees back
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="about-card">
+                    <div class="card-icon">
+                      <ion-icon name="rocket-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      CRO and Retention Optimizations
+                    </h3>
+
+                    <p class="card-text">
+                      Each time a digital asset is purchased or sold, Sequoir
+                      donates a percentage of the fees back
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="about-bottom">
+              <figure class="about-bottom-banner">
+                <img
+                  src="./assets/images/about-banner.png"
+                  alt="about banner"
+                  class="about-banner"
+                />
+              </figure>
+
+              <div class="about-bottom-content">
+                <h2 class="h2 section-title">We’re obsessed with growth</h2>
+
+                <p class="section-text">
+                  Each time a digital asset is purchased or sold, Sequoir
+                  donates a percentage of the fees back into the development of
+                  the asset through its charitable foundation.
+                </p>
+
+                <button class="btn btn-secondary">Sign Up For Free</button>
+              </div>
+            </div>
+          </div> -->
