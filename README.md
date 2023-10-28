@@ -1,11 +1,10 @@
 <div align="center">
   
-  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/funel-agency_landing_page)
-  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/funel-agency_landing_page?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/funel-agency_landing_page?style=social)
-  [![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/CDRcfbHyRqw?style=social)](https://youtu.be/CDRcfbHyRqw)
-
+  ![GitHub repo size](https://img.shields.io/github/repo-size/jcode-001/fundraising)
+  ![GitHub stars](https://img.shields.io/github/stars/jcode-001/fundraising)
+  ![GitHub forks](https://img.shields.io/github/forks/jcode-001/fundraising)
+  [![Twitter Follow](https://img.shields.io/twitter/follow/jcode001_?style=social)](https://twitter.com/intent/follow?screen_name=jcode001_)
+ 
   <br />
   <br />
   
@@ -33,13 +32,13 @@ To install **Funel**, run this command on your git bash:
 Linux and macOS:
 
 ```bash
-sudo git clone https://github.com/codewithsadee/funel-agency_landing_page.git
+sudo git clone https://github.com/jcode-001/Fundraising.git
 ```
 
 Windows:
 
 ```bash
-git clone https://github.com/codewithsadee/funel-agency_landing_page.git
+git clone https://github.com/jcode-001/Fundraising.git
 ```
 
 ### Contact
