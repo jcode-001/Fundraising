@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400&display=swap");
 /*-----------------------------------*\ 
  * #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -25,7 +26,7 @@
    * typography
    */
 
-  --f-family: CircularXXWeb, Trebuchet, Helvetica, Arial, sans-serif;
+  --f-family: Lato, sans-serif;
 
   --fs-1: 32px;
   --fs-2: 26px;
@@ -187,7 +188,7 @@ body {
 
 header {
   position: relative;
-  padding: 35px 0;
+  padding: 15px 0;
   z-index: 2;
 }
 
@@ -252,6 +253,10 @@ header .container {
   display: none;
 }
 
+.btn-primary > a {
+  color: #fff;
+}
+
 /*-----------------------------------*\ 
  * #HERO
 \*-----------------------------------*/
@@ -259,7 +264,11 @@ header .container {
 .hero {
   position: relative;
   padding: 130px 0 140px;
+  /* height: 90vh; */
   z-index: 1;
+  background-image: url("/assets/images/hero-image-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-content {
@@ -340,7 +349,7 @@ strong {
 }
 
 .about .round-num-icon {
-  background-color: #02a95c;
+  background-color: rgb(2, 169, 92);
   border-radius: 50%;
   color: #fff;
   width: fit-content;
@@ -545,6 +554,82 @@ textarea {
   min-height: 100px;
   height: 100px;
   resize: vertical;
+}
+
+/* JOIN */
+.join {
+  padding: 10rem 2rem;
+  height: 40vh;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: reverse;
+  justify-content: center;
+  align-items: center;
+  background-color: #0000001a;
+}
+
+.join h2 {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  text-align: left;
+  width: 40rem;
+}
+
+.flower-img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.round-btn {
+  border-radius: 50px;
+}
+
+.popular-cause {
+  padding: 3rem;
+  height: fit-content;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.popular-cause .card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  width: fit-content;
+  max-width: 450px;
+  padding: 0 0 0.76rem 0;
+}
+
+.popular-cause .card-img > img {
+  height: 185px;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+
+.popular-cause .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px 20px 0;
+}
+
+.popular-cause .card-content strong {
+  max-height: 53px;
+  overflow: hidden;
+  height: 53px;
+  font-size: 1.1rem;
+  color: #2f435a;
+}
+
+.popular-cause .card-content p {
+  color: #798798;
+  font-size: 14px;
 }
 
 /*-----------------------------------*\ 
@@ -990,7 +1075,7 @@ footer .logo {
     transform: translateY(-50%);
     width: 500px;
     padding-top: 500px;
-    background: url("../images/hero-banner.png") no-repeat;
+    /* background: url("../images/hero-banner.png") no-repeat; */
     background-size: contain;
   }
 
@@ -1140,19 +1225,25 @@ footer .logo {
   border-radius: 50%;
   transform: translateY(-50%);
 }
+
 .slider-wrapper .slide-button:hover {
   background: #404040;
 }
+
 .slider-wrapper .slide-button#prev-slide {
   left: -25px;
   display: none;
 }
+
 .slider-wrapper .slide-button#next-slide {
   right: -25px;
 }
+
 .slider-wrapper .image-list {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* grid-template-columns: repeat(10, 1fr); */
   gap: 18px;
   font-size: 0;
   list-style: none;
@@ -1160,20 +1251,33 @@ footer .logo {
   overflow-x: auto;
   scrollbar-width: none;
 }
+
+.slider-wrapper .image-list > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
 .slider-wrapper .image-list::-webkit-scrollbar {
   display: none;
 }
+
 .slider-wrapper .image-list .image-item {
   width: 325px;
   height: 400px;
   object-fit: cover;
 }
+
 .slider-container .slider-scrollbar {
   height: 24px;
   width: 100%;
   display: flex;
   align-items: center;
 }
+
 .slider-scrollbar .scrollbar-track {
   background: #ccc;
   width: 100%;
@@ -1183,9 +1287,11 @@ footer .logo {
   border-radius: 4px;
   position: relative;
 }
+
 .slider-scrollbar:hover .scrollbar-track {
   height: 4px;
 }
+
 .slider-scrollbar .scrollbar-thumb {
   position: absolute;
   background: #000;
@@ -1196,11 +1302,13 @@ footer .logo {
   cursor: grab;
   border-radius: inherit;
 }
+
 .slider-scrollbar .scrollbar-thumb:active {
   cursor: grabbing;
   height: 8px;
   top: -2px;
 }
+
 .slider-scrollbar .scrollbar-thumb::after {
   content: "";
   position: absolute;
@@ -1209,6 +1317,7 @@ footer .logo {
   top: -10px;
   bottom: -10px;
 }
+
 /* Styles for mobile and tablets */
 @media only screen and (max-width: 1023px) {
   .slider-wrapper .slide-button {
@@ -1227,3 +1336,5 @@ footer .logo {
     width: 20%;
   }
 }
+
+/*  */
