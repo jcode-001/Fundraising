@@ -6,20 +6,17 @@
     <title>Start fundraising campaign</title>
     <link rel="stylesheet" href="/assets/css/other-pages.css" />
   </head>
-  <body>
+  <body class="add-campaign-body">
     <aside class="side-bar">
       <h1>Let's begin your fundraising journey</h1>
       <p>We're here to guide you every step of the way.</p>
     </aside>
     <section class="right-side">
-      <!-- <header>
-        <button id="signin" class="signin-btn">Sign In</button>
-      </header> -->
       <!-- <h2 class="h2">Let's get started</h2> -->
 
       <div class="form-content-container">
         <h3>Fundraiser Information</h3>
-        <form action="">
+        <form action="" method="post" class="fund-form">
           <div class="input-container">
             <label for="fundraiser title" class="label">Fundraiser title</label>
             <input
@@ -28,13 +25,14 @@
               id=""
               placeholder="Add the title of your page"
               class="input"
+              required
             />
           </div>
           <div class="input-container">
             <label for="fundraiser category or partner" class="label"
               >Fundraiser category</label
             >
-            <select name="fundraiser category" id="">
+            <select name="fundraiser category" id="" required>
               <option value="Animals & pet">Animals & pet</option>
               <option value="business & startups">Business & startups</option>
             </select>
@@ -45,7 +43,7 @@
               <label for="fundraiser category or partner" class="label"
                 >Country</label
               >
-              <select name="fundraiser category" id="">
+              <select name="fundraiser category" id="" required>
                 <option value="Nigeria">Nigeria</option>
                 <option value="">United Kingdom</option>
               </select>
@@ -57,7 +55,12 @@
             </div>
             <div class="input-container">
               <label for="fundraiser city" class="label">City</label>
-              <input type="text" name="fundraiser city" class="input" />
+              <input
+                type="text"
+                name="fundraiser city"
+                class="input"
+                required
+              />
             </div>
           </div>
           <div class="form-container-2">
@@ -66,7 +69,7 @@
               <label for="fundraiser category or partner" class="label"
                 >What currency do you want to raise money in?</label
               >
-              <select name="donatioon currency" id="">
+              <select name="donatioon currency" id="" required>
                 <option value="Nigeria">US Dollar</option>
                 <option value="">Euro</option>
               </select>
@@ -135,19 +138,20 @@
                   hidden=""
                   accept="image/jpeg,image/png"
                   class="input"
+                  required
                 />
               </label>
             </div>
           </div>
           <div class="agree-block">
-            <input type="checkbox" name="agree" id="" />
+            <input type="checkbox" name="agree" id="" required />
             <p class="hint">
               * I agree to the Funnel <a href="#">terms</a>,
               <a href="#">privacy policy</a>, and industry low
               <a href="#">fees</a>
             </p>
           </div>
-          <button class="continue-btn">Continue</button>
+          <button class="blue-btn">Continue</button>
         </form>
       </div>
     </section>

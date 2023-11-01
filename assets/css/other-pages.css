@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -42,9 +43,9 @@ header {
   padding: 0 1.2rem;
 }
 
-/* .form-content-container {
+.form-content-container {
   padding-top: 15vh;
-} */
+}
 
 .signin-btn {
   background: #fff;
@@ -61,7 +62,7 @@ header {
   width: fit-content;
 }
 
-.right-side > h3 {
+.form-content-container > h3 {
   margin-left: 1rem;
 }
 
@@ -173,7 +174,7 @@ select {
   align-items: center;
 }
 
-.continue-btn {
+.blue-btn {
   background: #4a90e2;
   color: #fff;
   border-color: #4a90e2;
@@ -183,11 +184,17 @@ select {
   font-weight: 700;
   border-radius: 10px;
   border: 1px solid #eaebee;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.blue-btn:hover {
+  opacity: 1;
 }
 
 /* Screen larger than 768px - - Tablets - - */
 @media (min-width: 768px) {
-  body {
+  .add-campaign-body {
     display: flex;
   }
 
@@ -216,11 +223,11 @@ select {
     font-size: 2rem;
   }
 
-  .right-side > h3 {
+  .form-content-container > h3 {
     margin-left: 9rem;
   }
 
-  form {
+  .fund-form {
     width: 70%;
     margin: 2rem auto 0 auto;
   }
@@ -233,5 +240,98 @@ select {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+}
+
+/* --------------------- */
+/* ---- War in gaza ----*/
+/* --------------------- */
+
+.page-header {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.news-section {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.news-section h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.news-img,
+.news-img img {
+  border-radius: 10px;
+}
+
+.news-img img {
+  width: 100%;
+  height: auto;
+}
+
+.news-img {
+  margin-top: 1.4rem;
+  max-width: 600px;
+  max-height: 600px;
+}
+
+/* news section */
+.news-post {
+  margin-top: 1.2rem;
+  width: 90%;
+}
+
+.news-post p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.news-post strong {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--oxford-blue);
+}
+
+.news-box-content {
+  margin-top: 1.3rem;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* ---- ---- */
+.donate-btn {
+  width: 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.56rem;
+}
+
+.donate-form-container {
+  border-radius: 1rem;
+  height: fit-content;
+  margin-top: 10rem;
+  width: fit-content;
+}
+
+/*  */
+@media (min-width: 768px) {
+  .whole-news-section {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .news-section {
+    width: 60%;
+    margin: 0;
   }
 }
