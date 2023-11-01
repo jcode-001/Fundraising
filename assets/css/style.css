@@ -265,7 +265,7 @@ header .container {
   position: relative;
   padding: 130px 0 140px;
   z-index: 1;
-  background-image: url("/assets/images/bg.png");
+  background-image: url("../images/contact.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -801,7 +801,7 @@ footer .logo {
     align-items: center;
     /* padding: 140px 0 160px; */
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-      url("/assets/images/contact.jpg");
+      url("../images/contact.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     height: 87vh;

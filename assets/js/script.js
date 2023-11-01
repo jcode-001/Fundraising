@@ -52,14 +52,59 @@ screen.availWidth === 600
 // Blog Data
 const blogData = {
   post1: {
-      title: "Blog Post 1",
-      content: "Content for Blog Post 1...",
-      image: "https://example.com/image1.jpg"
+    title: "Help me recover from unidentified rare disease",
+    content:
+      "Hello everyone! My name is Dora,Im from Hungary. Well,it is not easy to start...I have",
+    image: "assets/images/war__gaza-war.jpg",
   },
   post2: {
-      title: "Blog Post 2",
-      content: "Content for Blog Post 2...",
-      image: "https://example.com/image2.jpg"
+    title: "Help me recover from unidentified rare disease",
+    content:
+      "Hi everyone! My name is Dora,Im from Hungary. Well,it is not easy to start...I have",
+    image: "assets/images/war__gaza-war.jpg",
+  },
+  post3: {
+    title: "Help me recover from unidentified rare disease",
+    content:
+      "Hi everyone! My name is Dora,Im from Hungary. Well,it is not easy to start...I have",
+    image: "assets/images/war__gaza-war.jpg",
   },
   // Add more blog posts...
 };
+// Todo: Fetch data and update the blogData Object
+
+//
+const blogList = document.getElementById("blog-list");
+
+for (const postId in blogData) {
+  const post = blogData[postId];
+
+  const blogSection = document.createElement("div");
+  blogSection.classList.add("mySlides");
+  blogSection.classList.add("fade");
+  blogSection.classList.add("card");
+
+  const blogImage = document.createElement("div");
+  blogImage.classList.add("card-img");
+  blogImage.innerHTML = `<img src="${post.image}" alt="${post.title}" />`;
+
+  const blogContent = document.createElement("div");
+  blogContent.classList.add("card-content");
+  blogContent.innerHTML = `
+        <strong>${post.title}</strong>
+        <div>
+            <p>${post.content}</p>
+        </div>
+    `;
+
+  blogSection.appendChild(blogImage);
+  blogSection.appendChild(blogContent);
+
+  const blogLink = document.createElement("a");
+  blogLink.href = `post.html?post=${postId}`;
+  blogLink.appendChild(blogSection);
+
+  blogList.appendChild(blogLink);
+
+  console.log(blogSection);
+}
