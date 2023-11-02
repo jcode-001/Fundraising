@@ -110,12 +110,16 @@
                     </div>
                 </div>
                 <!-- Profile Picture Upload -->
+                <!-- Profile Picture Upload -->
                 <label for="Profile picture" class="h3-upload">Upload your profile picture</label>
                 <p class="hint">This picture will be shown next to your name</p>
                 <div class="upload-content">
                     <label for="profile_image" class="upload">
                         <input type="file" name="profile_image" id="profile_image" hidden="" accept="image/jpeg, image/png" class="input" required>
                     </label>
+                </div>
+                <div class="profile-image-container" id="profile-image-container">
+                    <img id="profile-preview" src="#" alt="Profile Picture">
                 </div>
             </div>
 
@@ -133,41 +137,6 @@
     </div>
 
     <!-- JavaScript for Form Validation -->
-    <script>
-        const validateForm = () => {
-            // List of form field IDs to validate
-            const fieldsToValidate = [
-                "fundraiser-title",
-                "fundraiser-category",
-                "fundraiser-country",
-                "fundraiser-city",
-                "donation-currency",
-                "first-name",
-                "last-name",
-                "email",
-                "account-password"
-            ];
-
-            // Initialize the validation flag
-            let isValid = true;
-
-            // Loop through the form fields and validate each one
-            fieldsToValidate.forEach((fieldId) => {
-                const value = document.getElementById(fieldId).value;
-                const errorId = `${fieldId}-error`;
-                const errorMessage = document.getElementById(errorId);
-
-                if (!value) {
-                    errorMessage.textContent = `${fieldId.replace("-", " ")} is required.`;
-                    errorMessage.style.display = "block";
-                    isValid = false;
-                } else {
-                    errorMessage.textContent = "";
-                }
-            });
-
-            return isValid;
-        };
-    </script>
+    <script type="module" src="../assets/js/form.js"></script>
 </body>
 </html>

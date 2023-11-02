@@ -1,4 +1,6 @@
 "use strict";
+import { blogData } from "./blogData.js";
+
 // Navbar variables
 const menuToggleBtn = document.querySelector("[data-navbar-toggle-btn]");
 const navbar = document.querySelector("[data-navbar]");
@@ -24,12 +26,12 @@ window.addEventListener("scroll", function () {
 });
 
 // Carousel
-var slideIndex = 0;
+let slideIndex = 0;
 
 function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -42,38 +44,16 @@ function showSlides() {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
 
 screen.availWidth === 600
   ? showSlides()
   : console.log("Screen size is not up to 600px yet");
 
-// Blog Data
-const blogData = {
-  post1: {
-    title: "Help me recover from unidentified rare disease",
-    content:
-      "Hello everyone! My name is Dora,Im from Hungary. Well,it is not easy to start...I have",
-    image: "assets/images/war__gaza-war.jpg",
-  },
-  post2: {
-    title: "Help me recover from unidentified rare disease",
-    content:
-      "Hi everyone! My name is Dora,Im from Hungary. Well,it is not easy to start...I have",
-    image: "assets/images/war__gaza-war.jpg",
-  },
-  post3: {
-    title: "Help me recover from unidentified rare disease",
-    content:
-      "Hi everyone! My name is Dora,Im from Hungary. Well,it is not easy to start...I have",
-    image: "assets/images/war__gaza-war.jpg",
-  },
-  // Add more blog posts...
-};
 // Todo: Fetch data and update the blogData Object
 
-//
+// display each blogData into index.html
 const blogList = document.getElementById("blog-list");
 
 for (const postId in blogData) {
@@ -101,10 +81,12 @@ for (const postId in blogData) {
   blogSection.appendChild(blogContent);
 
   const blogLink = document.createElement("a");
-  blogLink.href = `post.html?post=${postId}`;
+  blogLink.href = `/pages/post.html?post=${postId}`;
   blogLink.appendChild(blogSection);
 
   blogList.appendChild(blogLink);
 
   console.log(blogSection);
 }
+
+console.log("active...");
