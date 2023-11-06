@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Start fundraising campaign</title>
+    <style>
+      .error-message {
+        color: red;
+      }
+    </style>
+    <link rel="stylesheet" href="/assets/css/other-pages.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body class="add-campaign-body">
+    <aside class="side-bar">
+      <div class="top">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" alt="Funel logo" />
+        </a>
+      </div>
+      <div class="side-bar-content">
+        <h1>Fundraiser Story</h1>
+        <p>Tell your story! Add your description, images, videos and more</p>
+      </div>
+    </aside>
+    <section class="right-side">
+      <div class="form-content-container">
+        <form action="" id="form2" class="fund-form">
+          <h3>Your fundraiser story</h3>
+          <p class="small-text">
+            Explain why you're raising money, what the funds will be used for,
+            and how much you value the support
+          </p>
+          <textarea
+            name="fundraiser-story"
+            class="fundraiser-story-textarea"
+            id=""
+            cols="85"
+            rows="20"
+            draggable="false"
+          ></textarea>
+          <div class="input-container mb-10">
+            <h3>Upload fundraisers photos</h3>
+            <p class="small-text">
+              This picture will be show on your fundraiser post
+            </p>
+            <div class="upload-content">
+              <label for="fundraiser_photo" class="fundraiser-photo-upload">
+                <input
+                  type="file"
+                  name="fundraiser_photo"
+                  id="fundraiser_photo"
+                  hidden="true"
+                  accept="image/jpeg, image/png, image/jpg"
+                  class="input"
+                  required
+                />
+                <span class="material-symbols-outlined"> add_circle </span>
+              </label>
+            </div>
+            <div
+              class="profile-image-container fundraiser-image-container bdrs-10"
+              id="profile-image-container"
+            >
+              <img
+                class="bdrs-10"
+                id="profile-preview"
+                src="#"
+                alt="Profile Picture"
+              />
+            </div>
+          </div>
+          <div class="input-container mb-10">
+            <h3>Your video URL</h3>
+            <p class="small-text">
+              The inclusion of a personalized video can help your fundraiser
+              raise more money. We support links from Youtube and Vimeo. Simply
+              copy paste your video link into the field below.
+            </p>
+            <div class="input-container">
+              <label for="fundraiser video link" class="label">Video URL</label>
+              <input
+                type="text"
+                name="fundraiser video link"
+                id="fundraiser-video-link"
+                placeholder="https://"
+                class="input"
+                required
+              />
+              <span id="fundraiser-city-error" class="error-message"></span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- JavaScript for Form Validation -->
+    <script type="module" src="/assets/js/form.js"></script>
+  </body>
+</html>
