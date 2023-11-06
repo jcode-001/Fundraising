@@ -10,9 +10,9 @@
   
   <img src="./readme-images/project-logo.png" />
 
-  <h2 align="center">Funel - Agency landing page</h2>
+  <h2 align="center">Funel - Fundraising platform</h2>
 
-Funel is a fund raising platform <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
+Funel is a fund raising platform <br />built using HTML, CSS, and JavaScript.
 
 </div>
 
@@ -47,4 +47,4 @@ If you want to contact with me you can reach me at [Twitter](https://www.twitter
 
 ### License
 
-This project is **free to use** and does not contains any license.
+This project is licensed.
