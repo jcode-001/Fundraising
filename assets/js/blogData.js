@@ -18,7 +18,8 @@ export const blogData = {
     title: "Help me recover from unidentified rare disease",
     content:
       "Hi everyone! My name is Dora,Im from Hungary. Well,it is not easy to start...I have",
-    image: "assets/images/war__gaza-war.jpg",
+    image:
+      "https://assets.gogetfunding.com/wp-content/uploads/2022/08/7643030/img/cimg_7643030_1661086740.png",
   },
   // Add more blog posts...
 };
