@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 /*-----------------------------------*\ 
  * #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -26,7 +26,7 @@
    * typography
    */
 
-  --f-family: Lato, sans-serif;
+  --f-family: "Poppins", sans-serif;
 
   --fs-1: 32px;
   --fs-2: 26px;
@@ -928,6 +928,15 @@ footer .logo {
     display: flex;
     flex-direction: row;
     margin-bottom: 2rem;
+  }
+
+  .step {
+    padding: 2rem 2.5rem;
+    border-radius: 15px;
+    width: 20rem;
+    flex: 1 1 0px;
+    flex-direction: column;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
   }
 
   /* Featured content */
