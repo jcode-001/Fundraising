@@ -1,7 +1,6 @@
 "use strict";
 // Form 1
 const form1 = document.getElementById("form1");
-
 // Form 2
 const form2 = document.getElementById("form2");
 
@@ -16,6 +15,59 @@ const addOptions = function (array, parentElement) {
   });
 };
 
+const validateForm = function (event) {
+  event.preventDefault();
+
+  // Get form field values for the first form
+  const fundraiserTitle = document.getElementById("fundraiser-title").value;
+  const fundraiserCategory = document.getElementById(
+    "fundraiser-category"
+  ).value;
+  const firstName = document.getElementById("first-name").value;
+  const lastName = document.getElementById("last-name").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("account-password").value;
+  const agree = document.getElementById("agree").checked;
+
+  let isValid = true;
+
+  if (fundraiserTitle.trim() === "") {
+    isValid = false;
+    document.getElementById("fundraiser-title-error").textContent =
+      "Fundraiser title is required.";
+  } else {
+    document.getElementById("fundraiser-title-error").textContent = "";
+  }
+
+  if (fundraiserCategory === "") {
+    isValid = false;
+    document.getElementById("fundraiser-category-error").textContent =
+      "Select a fundraiser category.";
+  } else {
+    document.getElementById("fundraiser-category-error").textContent = "";
+  }
+
+  if (firstName.trim() === "") {
+    isValid = false;
+    document.getElementById("first-name-error").textContent =
+      "First name is required.";
+  } else {
+    document.getElementById("first-name-error").textContent = "";
+  }
+
+  // if (!agree) {
+  //   isValid = false;
+  //   error1.textContent = "Please agree to the terms and conditions.";
+  // } else {
+  //   error1.textContent = "";
+  // }
+
+  if (isValid) {
+    // Redirect to the next page for the first form on successful validation
+    window.location.href = "add-campaign-2.html";
+  }
+};
+
 document.addEventListener("DOMContentLoaded", function () {
   const currency = [
     "Euro (EUR)",
@@ -26,9 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "Swiss Franc (CHF)",
     "Chinese Yuan (CNY)",
   ];
-
   const countries = ["Nigeria", "United Kingdom", "Ghana"];
-  const error1 = document.getElementById("error1");
 
   if (form1) {
     const currencySelect = document.getElementById("donation-currency");
@@ -37,60 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const countrySelect = document.getElementById("fundraiser-country");
     addOptions(countries, countrySelect);
 
-    form1.addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      // Get form field values for the first form
-      const fundraiserTitle = document.getElementById("fundraiser-title").value;
-      const fundraiserCategory = document.getElementById(
-        "fundraiser-category"
-      ).value;
-      const firstName = document.getElementById("first-name").value;
-      const lastName = document.getElementById("last-name").value;
-      const email = document.getElementById("email").value;
-      const password = document.getElementById("account-password").value;
-      const agree = document.getElementById("agree").checked;
-
-      // Add your form validation conditions here for the first form
-      let isValid = true;
-
-      if (fundraiserTitle.trim() === "") {
-        isValid = false;
-        document.getElementById("fundraiser-title-error").textContent =
-          "Fundraiser title is required.";
-      } else {
-        document.getElementById("fundraiser-title-error").textContent = "";
-      }
-
-      if (fundraiserCategory === "") {
-        isValid = false;
-        document.getElementById("fundraiser-category-error").textContent =
-          "Select a fundraiser category.";
-      } else {
-        document.getElementById("fundraiser-category-error").textContent = "";
-      }
-
-      if (firstName.trim() === "") {
-        isValid = false;
-        document.getElementById("first-name-error").textContent =
-          "First name is required.";
-      } else {
-        document.getElementById("first-name-error").textContent = "";
-      }
-      // Add more form field validations as needed
-
-      if (!agree) {
-        isValid = false;
-        error1.textContent = "Please agree to the terms and conditions.";
-      } else {
-        error1.textContent = "";
-      }
-
-      if (isValid) {
-        // Redirect to the next page for the first form on successful validation
-        window.location.href = "add-campaign-2.html";
-      }
-    });
+    form1.addEventListener("submit", validateForm);
   }
 
   const error2 = document.getElementById("error2");

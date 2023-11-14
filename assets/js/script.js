@@ -81,12 +81,13 @@ for (const postId in blogData) {
   blogSection.appendChild(blogContent);
 
   const blogLink = document.createElement("a");
-  blogLink.href = `/pages/form/post.html?post=${postId}`;
+  blogLink.href = `/pages/post.html?post=${postId}`;
   blogLink.appendChild(blogSection);
 
   blogList.appendChild(blogLink);
 
   console.log(blogSection);
+  console.log(postId);
 }
 
 console.log("active...");

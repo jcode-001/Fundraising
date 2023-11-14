@@ -10,6 +10,7 @@ const postContent = document.getElementById("post-content");
 
 const urlParams = new URLSearchParams(window.location.search);
 const postId = urlParams.get("post");
+console.log("Line 13:", postId);
 
 if (blogData[postId]) {
   postContent.innerHTML = `
@@ -74,6 +75,6 @@ if (blogData[postId]) {
   `;
   document.title = blogData[postId].title; // Set the page title
 } else {
-  console.log("error ocuured");
+  console.log("error occured");
   // Handle the case when the blog post is not found
 }
