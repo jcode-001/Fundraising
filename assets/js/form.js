@@ -1,13 +1,42 @@
 "use strict";
 // Form 1
 const form1 = document.getElementById("form1");
+
 // Form 2
 const form2 = document.getElementById("form2");
 
+const addOptions = function (array, parentElement) {
+  array.forEach((item) => {
+    const option = document.createElement("option");
+    const value = document.createTextNode(item);
+    option.value = value.data;
+    option.appendChild(value);
+
+    parentElement.appendChild(option);
+  });
+};
+
 document.addEventListener("DOMContentLoaded", function () {
+  const currency = [
+    "Euro (EUR)",
+    "British Pound Sterling (GBP)",
+    "Japanese Yen (JPY)",
+    "Canadian Dollar (CAD)",
+    "Australian Dollar (AUD)",
+    "Swiss Franc (CHF)",
+    "Chinese Yuan (CNY)",
+  ];
+
+  const countries = ["Nigeria", "United Kingdom", "Ghana"];
   const error1 = document.getElementById("error1");
 
   if (form1) {
+    const currencySelect = document.getElementById("donation-currency");
+    addOptions(currency, currencySelect);
+
+    const countrySelect = document.getElementById("fundraiser-country");
+    addOptions(countries, countrySelect);
+
     form1.addEventListener("submit", function (event) {
       event.preventDefault();
 
@@ -48,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         document.getElementById("first-name-error").textContent = "";
       }
-
       // Add more form field validations as needed
 
       if (!agree) {
@@ -74,7 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
       // Get form field values for the second form
       const fundraiserStory = document.getElementById("fundraiser-story").value;
 
-      // Add your form validation conditions here for the second form
       let isValid = true;
 
       if (fundraiserStory.trim() === "") {
