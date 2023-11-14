@@ -15,6 +15,11 @@ body {
   display: none;
 }
 
+.po-rel {
+  position: relative;
+  top: 2rem;
+}
+
 .side-bar-content {
   width: 90%;
 }
@@ -284,13 +289,20 @@ select {
   }
 
   .side-bar {
-    flex-direction: column;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     width: 37vw;
     height: 100vh;
     padding: 0 0 0 0.46rem;
     position: fixed;
+  }
+
+  .center {
+    height: 90vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
   }
 
   .right-side {
